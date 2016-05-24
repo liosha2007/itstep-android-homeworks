@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lsv>
+    <entry key="acer">Acer</entry>
+    <entry key="apple">Apple</entry>
+    <entry key="asus">Asus</entry>
+    <entry key="dell">Dell</entry>
+    <entry key="fujitsu">Fujitsu</entry>
+    <entry key="goclever">Goclever</entry>
+    <entry key="hp-hewlett-packard">HP (Hewlett Packard)</entry>
+    <entry key="lenovo">Lenovo</entry>
+    <entry key="msi">MSI</entry>
+    <entry key="panasonic">Panasonic</entry>
+    <entry key="razer">Razer</entry>
+</lsv>

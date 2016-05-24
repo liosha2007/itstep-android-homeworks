@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Тест по программированию v1.0.0</string>
+    <string name="question_1">Вопрос номер 1</string>
+    <string name="question_2">Вопрос номер 2</string>
+    <string name="question_3">Вопрос номер 3</string>
+    <string name="question_4">Вопрос номер 4</string>
+    <string name="question_5">Вопрос номер 5</string>
+    <string name="question_6">Вопрос номер 6</string>
+    <string name="question_text_1">Программирование под Android: Как называются основные методы класса Activity?</string>
+    <string name="question_text_2">Программирование на Java: Какие методы реализованы в классе Object?</string>
+    <string name="question_text_3">Программирование под Android: Для чего нужны лаяуты?</string>
+    <string name="question_text_4">Программирование на Java: Можно ли в Java отметить класс как final и на что это повлияет (если можно)?</string>
+    <string name="question_text_5">Программирование под Android: Для чего нужен файл манифеста?</string>
+    <string name="question_text_6">Программирование на Java: Где можно использовать вложенный приватный класс?</string>
+    <string name="next_question">Следующий вопрос</string>
+    <string name="view_result">Посмотреть результат</string>
+    <string name="insert_answer">Вставить ответ</string>
+</resources>

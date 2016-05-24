@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lsv>
+    <entry key="48769">HDD</entry>
+    <entry key="48774">SSD</entry>
+    <entry key="48779">Гибрид HDD+SSD</entry>
+    <entry key="119032">eMMC</entry>
+    <entry key="119037">HDD+eMMC</entry>
+</lsv>

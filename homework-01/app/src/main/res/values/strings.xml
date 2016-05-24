@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Homework 01</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_three">Текст 3</string>
+    <string name="text_one">Текст 1</string>
+    <string name="text_two">Текст 2</string>
+    <string name="toast_one">Тост 1</string>
+    <string name="toast_two">Тост 2</string>
+    <string name="toast_three">Тост 3</string>
+
+    <string name="toast_text_1">Device Compatibility</string>
+    <string name="toast_text_2">System Permissions</string>
+    <string name="toast_text_3">Device Compatibility</string>
+
+    <string name="text_text_1">Android is designed to run on many different types of devices, from phones to tablets and televisions. As a developer, the range of devices provides a huge potential audience for your app. In order for your app to be successful on all these devices, it should tolerate some feature variability and provide a flexible user interface that adapts to different screen configurations.</string>
+    <string name="text_text_2">Android is a privilege-separated operating system, in which each application runs with a distinct system identity (Linux user ID and group ID). Parts of the system are also separated into distinct identities. Linux thereby isolates applications from each other and from the system.</string>
+    <string name="text_text_3">Android is designed to run on many different types of devices, from phones to tablets and televisions. As a developer, the range of devices provides a huge potential audience for your app. In order for your app to be successful on all these devices, it should tolerate some feature variability and provide a flexible user interface that adapts to different screen configurations.</string>
+</resources>

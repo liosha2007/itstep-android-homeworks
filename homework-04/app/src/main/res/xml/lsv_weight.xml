@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lsv>
+    <entry key="450">до 1 кг</entry>
+    <entry key="451">от 1 до 1.5 кг</entry>
+    <entry key="452">от 1.5 до 2 кг</entry>
+    <entry key="453">Более 2 кг</entry>
+    <entry key="454">От 2.5 до 3 кг</entry>
+    <entry key="455">Более 3 кг</entry>
+</lsv>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scv_tab_other"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Операционная система"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spn_os"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Подсветка клавиатуры"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/chb_keyboard_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Есть" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Батарея"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spn_battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="multipleChoice"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Вес"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="multipleChoice"
+                android:minHeight="150dp"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Цвет"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="multipleChoice"
+                android:minHeight="150dp"></ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

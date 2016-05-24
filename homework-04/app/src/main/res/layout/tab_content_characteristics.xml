@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scv_tab_characteristics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Экран"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="multipleChoice"
+                android:minHeight="150dp"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Разрешение"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_resoluion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Тип экрана"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_screen_type"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Покрытие экрана"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_screen_material"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Сенсорный экран"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdb_sensor_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Да" />
+
+                <RadioButton
+                    android:id="@+id/rdb_sensor_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Нет" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Количество ядер"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_core_count"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Процессор"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_core"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Объем оперативной памяти"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_memory"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="3G модуль"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/chb_3g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3G модуль" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Тип видеокарты"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_video_type"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Видеокарта"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_video"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Тип накопителя"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_storage_type"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:text="Объем накопителя"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lsv_storage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:choiceMode="multipleChoice"></ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

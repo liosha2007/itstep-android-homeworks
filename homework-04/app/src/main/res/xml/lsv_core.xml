@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lsv>
+    <entry key="intel_core_i7">Intel Core i7</entry>
+    <entry key="intel_core_i5">Intel Core i5</entry>
+    <entry key="intel_core_i3">Intel Core i3</entry>
+    <entry key="136402">Intel Core M</entry>
+    <entry key="6276">Intel Pentium</entry>
+    <entry key="6279">Intel Celeron</entry>
+    <entry key="6282">Intel Atom</entry>
+    <entry key="505149">Intel Xeon</entry>
+    <entry key="132757">AMD FX</entry>
+    <entry key="11516">AMD E</entry>
+    <entry key="13288">AMD A10</entry>
+    <entry key="23651">AMD A8</entry>
+    <entry key="23652">AMD A6</entry>
+    <entry key="23653">AMD A4</entry>
+</lsv>
