@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Первый миллион</string>
+    <string name="about_content">
+        <b>Первый милион v1.0.0</b>\n\n
+        Подготовил студент компьютерной академии ШАГ<br />\n
+        Пермяков Алексей<br />\n
+        e-mail: liosha.89@mail.ru<br />\n\n
+        <i>Использовались материалы, найденные на просторах интернета</i>
+    </string>
+    <string name="you_got_gold">Вы зарабатываете $%1$d!</string>
+    <string name="you_win_gold">Вы победили! Ваш приз составляет $%1$d!</string>
+    <string name="gameover_message">Вы проиграли и забираете $%1$d!</string>
+    <string name="txv_var">%1$d%%</string>
+    <string name="next_question">Следующий вопрос</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="i_am_player">I am player</string>
+</resources>

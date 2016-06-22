@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_margin="3dp"
+        android:id="@+id/btn_question_one"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/block_small_background"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_margin="3dp"
+        android:id="@+id/btn_question_three"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/block_small_background"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_margin="3dp"
+        android:id="@+id/btn_question_two"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/block_small_background"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_margin="3dp"
+        android:id="@+id/btn_question_four"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/block_small_background"
+        android:textSize="10sp" />
+</LinearLayout>
