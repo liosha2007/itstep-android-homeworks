@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
                     .create();
             alertDialog.show();
         } else {
-            if (commonValue <= -4) {
+            if (commonValue <= 0 /* ommonValue <= -4 */) {
                 imv_result.setImageResource(R.drawable.low_self_assessment);
                 txv_result.setText(R.string.low_self_assessment);
-            } else if (commonValue >= 4) {
+            } else if (commonValue > 0 /* commonValue >= 4 */) {
                 imv_result.setImageResource(R.drawable.high_self_assessment);
                 txv_result.setText(R.string.high_self_assessment);
             } else {
