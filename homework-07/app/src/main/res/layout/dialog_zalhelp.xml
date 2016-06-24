@@ -6,55 +6,43 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/txv_var_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_margin="10dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:text="A: xxx%"
+        android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/txv_var_a"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text="A: xxx%"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/txv_var_b"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text="B: xxx%"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/txv_var_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_margin="10dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:text="C: xxx%"
+        android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/txv_var_c"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text="C: xxx%"
-            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/txv_var_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:text="B: xxx%"
+        android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/txv_var_d"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text="D: xxx%"
-            android:textSize="20sp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/txv_var_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:text="D: xxx%"
+        android:textSize="20sp" />
 </LinearLayout>

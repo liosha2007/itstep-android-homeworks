@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -114,6 +115,8 @@ public class VariantsFragment extends GenericFragment<MainActivity> implements V
             percentage.add(nextInt);
         }
         percentage.add(100 - correction - sum(percentage));
+        System.out.println("Variants: " + percentage);
+        System.out.println("correctIndex: " + correctIndex);
         int maxIndex = percentage.indexOf(Collections.max(percentage));
         percentage.set(maxIndex, percentage.get(maxIndex) + correction);
         final int[] result = new int[buttons.size()];
@@ -122,11 +125,15 @@ public class VariantsFragment extends GenericFragment<MainActivity> implements V
             if (n == correctIndex) {
                 result[n] = percentage.get(maxIndex);
             } else {
-                result[n] = percentage.get(curIndex == maxIndex ? ++curIndex : curIndex);
+                if (curIndex == maxIndex) {
+                    curIndex++;
+                }
+                result[n] = percentage.get(curIndex);
                 curIndex++;
             }
 
         }
+        System.out.println("result: " + Arrays.toString(result));
         return result;
     }
 

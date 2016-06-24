@@ -14,8 +14,7 @@
         android:layout_margin="2dp"
         android:background="@drawable/block_small_background_empty"
         android:minWidth="200dp"
-        android:text="Загрузить игру"
-        android:visibility="invisible"/>
+        android:text="Загрузить игру"/>
 
     <Button
         android:id="@+id/btn_new"
