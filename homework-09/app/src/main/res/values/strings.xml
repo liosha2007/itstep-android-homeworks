@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Homework-09</string>
+    <string name="score">Очки: %d</string>
+    <string name="live">Жизни: %d</string>
+</resources>
