@@ -21,6 +21,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -38,10 +39,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Anim
     private Map<Animator, View> enemies = new HashMap<>();
     private int score = 0;
     private int live = 10;
-    private View imv_player;
+    private ImageView imv_player;
     private TextView txv_score;
     private TextView txv_live;
-    private final int enemySize = 100;
+    private final int enemySize = 70;
     private RelativeLayout rll_root;
     private final Handler uiHandler = new Handler();
     private Timer myTimer;
@@ -54,6 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Anim
     };
     private int width;
     private int height;
+    private boolean isPaused = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +89,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Anim
         myTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                uiHandler.post(runnableStart);
+                if (!isPaused) {
+                    uiHandler.post(runnableStart);
+                }
             }
         }, 3L * RANDOM.nextInt(1000)); // интервал - 3000 миллисекунд, 0 миллисекунд до первого запуска.
 
@@ -99,10 +103,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Anim
 
         final LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(enemySize, enemySize);
 
-        final View enemy = new View(this);
+        final ImageView enemy = new ImageView(this);
         enemy.setX(left);
         enemy.setLayoutParams(layoutParams);
-        enemy.setBackgroundColor(Color.YELLOW);
+        enemy.setImageResource(R.drawable.meteor);
         enemy.setOnClickListener(this);
         rll_root.addView(enemy);
 
@@ -165,7 +169,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Anim
 
     private Animation createExplosionAnimation(final View enemy) {
         final Animation animation = AnimationUtils.loadAnimation(this, R.anim.explosion);
-        enemy.setBackgroundColor(Color.RED);
+        ((ImageView) enemy).setImageResource(R.drawable.boom);
+        enemy.getLayoutParams().width *= 1.7;
+        enemy.getLayoutParams().height *= 1.7;
         animation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -213,6 +219,13 @@ public class MainActivity extends Activity implements View.OnClickListener, Anim
                 })
                 .setMessage("Игра окончена!\nВаши очки: " + score)
                 .create().show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        myTimer.cancel();
+        myTimer.purge();
+        super.onBackPressed();
     }
 
     @Override

@@ -3,7 +3,8 @@
     android:id="@+id/rll_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom">
+    android:gravity="bottom"
+    android:background="#000000">
 
     <TextView
         android:id="@+id/txv_score"
@@ -14,7 +15,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="20sp"
-        android:textColor="#3333FF"
+        android:textColor="#8989fc"
         android:text="@string/score" />
 
     <TextView
@@ -27,11 +28,11 @@
         android:textColor="#55AA55"
         android:text="@string/live" />
 
-    <View
+    <ImageView
         android:id="@+id/imv_player"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:background="#00FF00" />
+        android:background="@drawable/city" />
 </RelativeLayout>
