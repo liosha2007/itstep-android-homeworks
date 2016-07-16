@@ -7,9 +7,11 @@ import java.io.Serializable;
  */
 public class GameState implements Serializable {
     private int sumIndex;
-    private int usedIndex = 0;
     private int[] usedQuestions;
     private String userName;
+    private boolean is50x50Used;
+    private boolean isCallUsed;
+    private boolean isZalUsed;
 
     public int getSumIndex() {
         return sumIndex;
@@ -35,15 +37,27 @@ public class GameState implements Serializable {
         return userName;
     }
 
-    public void addUsedQuestionIndex(int questionIndex) {
-        usedQuestions[usedIndex++] = questionIndex;
+    public boolean is50x50Used() {
+        return is50x50Used;
     }
 
-    public int getUsedIndex() {
-        return usedIndex;
+    public void setIs50x50Used(boolean is50x50Used) {
+        this.is50x50Used = is50x50Used;
     }
 
-    public void setUsedIndex(int usedIndex) {
-        this.usedIndex = usedIndex;
+    public boolean isCallUsed() {
+        return isCallUsed;
+    }
+
+    public void setCallUsed(boolean callUsed) {
+        isCallUsed = callUsed;
+    }
+
+    public boolean isZalUsed() {
+        return isZalUsed;
+    }
+
+    public void setZalUsed(boolean zalUsed) {
+        isZalUsed = zalUsed;
     }
 }

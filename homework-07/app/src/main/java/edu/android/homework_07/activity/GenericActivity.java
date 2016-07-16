@@ -13,6 +13,8 @@ import org.xmlpull.v1.XmlPullParser;
 import java.util.HashMap;
 import java.util.Map;
 
+import icepick.Icepick;
+
 /**
  * @author liosha on 03.06.2016.
  */
@@ -77,4 +79,18 @@ public abstract class GenericActivity extends Activity {
         }
         return null;
     }
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Icepick.restoreInstanceState(this, savedInstanceState);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Icepick.saveInstanceState(this, outState);
+    }
+
 }

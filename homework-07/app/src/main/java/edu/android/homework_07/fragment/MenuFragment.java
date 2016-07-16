@@ -11,7 +11,7 @@ import edu.android.homework_07.activity.MainActivity;
  * @author liosha on 09.06.2016.
  */
 public class MenuFragment extends GenericFragment<MainActivity> implements View.OnClickListener {
-    private Button btn_load;
+//    private Button btn_load;
 //    private Button btn_new;
 //    private Button btn_records;
 //    private Button btn_about;
@@ -29,7 +29,7 @@ public class MenuFragment extends GenericFragment<MainActivity> implements View.
     }
 
     private void prepareViews() {
-        btn_load = view(R.id.btn_load);
+        this.<Button>view(R.id.btn_load).setOnClickListener(this);
         this.<Button>view(R.id.btn_new).setOnClickListener(this);
         this.<Button>view(R.id.btn_records).setOnClickListener(this);
         this.<Button>view(R.id.btn_about).setOnClickListener(this);

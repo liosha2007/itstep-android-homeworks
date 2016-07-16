@@ -29,11 +29,12 @@ import edu.android.homework_07.R;
 import edu.android.homework_07.activity.MainActivity;
 import edu.android.homework_07.data.Answer;
 import edu.android.homework_07.data.Question;
+import edu.android.homework_07.saver.RecordsSaver;
 
 /**
  * @author liosha on 09.06.2016.
  */
-public class RecordsFragment extends GenericFragment<MainActivity> {
+public class RecordsFragment extends GenericFragment<MainActivity> implements RecordsSaver.OnRecordsLoadListener {
     private TextView txv_records;
     public RecordsFragment() {
         super(R.layout.fragment_records);
@@ -48,18 +49,20 @@ public class RecordsFragment extends GenericFragment<MainActivity> {
     }
 
     private void loadAndShowRecords() {
-        try {
-            File file = new File(MainActivity.RECORDS_FILE_PATH);
-            Scanner scanner = new Scanner(file);
-            StringBuilder builder = new StringBuilder();
-            while (scanner.hasNext()) {
-                builder.append(scanner.next());
-            }
-            scanner.close();
-            txv_records.setText(Html.fromHtml(builder.toString()));
-
-        } catch (Exception e) {
-            Log.d("MY", "Can't load records! ", e);
+        final RecordsSaver recordsSaver = getCurrentActivity().getRecordsSaver();
+        if (recordsSaver != null && recordsSaver.canLoad(getActivity())) {
+            recordsSaver.setOnRecordsLoadListener(this);
+            recordsSaver.loadRecords(getActivity());
         }
+    }
+
+    @Override
+    public void onGetRecords(StringBuilder records) {
+        txv_records.setText(Html.fromHtml(records.toString()));
+    }
+
+    @Override
+    public void onRecordsLoaded() {
+
     }
 }

@@ -48,7 +48,7 @@ public class VariantsFragment extends GenericFragment<MainActivity> implements V
             add(btn_question_three);
             add(btn_question_four);
         }};
-        Collections.shuffle(buttons, QuestionFragment.RANDOM);
+        Collections.shuffle(buttons, MainActivity.RANDOM);
         for (int n = 0; n < buttons.size(); n++) {
             final Answer answer = answers[n];
             final Button button = buttons.get(n);
@@ -79,7 +79,7 @@ public class VariantsFragment extends GenericFragment<MainActivity> implements V
             add(btn_question_three);
             add(btn_question_four);
         }};
-        Collections.shuffle(buttons, QuestionFragment.RANDOM);
+        Collections.shuffle(buttons, MainActivity.RANDOM);
 
         int invisible = 0;
         for (int n = 0; n < buttons.size() && invisible < 2; n++) {
@@ -110,7 +110,7 @@ public class VariantsFragment extends GenericFragment<MainActivity> implements V
         int max = 100 - correction;
         List<Integer> percentage = new ArrayList<>(buttons.size());
         while (percentage.size() < buttons.size() - 1) {
-            final int nextInt = QuestionFragment.RANDOM.nextInt(max);
+            final int nextInt = MainActivity.RANDOM.nextInt(max);
             max -= nextInt;
             percentage.add(nextInt);
         }
@@ -153,4 +153,5 @@ public class VariantsFragment extends GenericFragment<MainActivity> implements V
         }
         return result;
     }
+
 }

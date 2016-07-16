@@ -14,4 +14,6 @@
     <string name="next_question">Следующий вопрос</string>
     <string name="your_name">Ваше имя</string>
     <string name="i_am_player">I am player</string>
+    <string name="game_loaded">Игра загружена!</string>
+    <string name="no_records">Рекордов пока нет...</string>
 </resources>

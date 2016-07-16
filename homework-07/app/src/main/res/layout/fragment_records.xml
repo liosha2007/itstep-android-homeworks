@@ -7,7 +7,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Records"
+        android:text="@string/no_records"
+        android:layout_margin="5dp"
         android:id="@+id/txv_records"
         android:layout_gravity="center_horizontal" />
 </ScrollView>

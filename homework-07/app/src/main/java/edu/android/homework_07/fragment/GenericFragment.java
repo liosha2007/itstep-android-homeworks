@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import icepick.Icepick;
+
 
 /**
  * @author liosha on 09.06.2016.
@@ -54,5 +56,17 @@ public abstract class GenericFragment<T extends Activity> extends Fragment {
     public void onDestroyView() {
         sharedPreferences = null;
         super.onDestroyView();
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Icepick.restoreInstanceState(this, savedInstanceState);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Icepick.saveInstanceState(this, outState);
     }
 }

@@ -17,6 +17,9 @@ import edu.android.homework_07.activity.MainActivity;
  */
 public class InfoFragment extends GenericFragment<MainActivity> implements View.OnClickListener {
     private TextView txv_prize;
+    private Button btn_50_50;
+    private Button btn_zal;
+    private Button btn_call;
 
     public InfoFragment() {
         super(R.layout.fragment_info);
@@ -30,9 +33,9 @@ public class InfoFragment extends GenericFragment<MainActivity> implements View.
     }
 
     private void prepareViews() {
-        this.<Button>view(R.id.btn_50_50).setOnClickListener(this);
-        this.<Button>view(R.id.btn_zal).setOnClickListener(this);
-        this.<Button>view(R.id.btn_call).setOnClickListener(this);
+        (btn_50_50 = this.<Button>view(R.id.btn_50_50)).setOnClickListener(this);
+        (btn_zal = this.<Button>view(R.id.btn_zal)).setOnClickListener(this);
+        (btn_call = this.<Button>view(R.id.btn_call)).setOnClickListener(this);
         txv_prize = view(R.id.txv_prize);
     }
 
@@ -55,5 +58,17 @@ public class InfoFragment extends GenericFragment<MainActivity> implements View.
 
     public void updateCurrentGold(int gold) {
         txv_prize.setText(String.format(Locale.US, "$%d", gold));
+    }
+
+    public void updateHelps(boolean isZalUsed, boolean isCallUsed, boolean is50x50Used) {
+        if (isZalUsed) {
+            btn_zal.setVisibility(View.INVISIBLE);
+        }
+        if (isCallUsed) {
+            btn_call.setVisibility(View.INVISIBLE);
+        }
+        if (is50x50Used) {
+            btn_50_50.setVisibility(View.INVISIBLE);
+        }
     }
 }
