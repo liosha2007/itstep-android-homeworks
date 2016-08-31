@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="SERV_KEY"
+        android:title="MS SQL Сервер"/>
+    <EditTextPreference
+        android:key="PORT_KEY"
+        android:title="Порт"
+        android:defaultValue="1433" />
+    <EditTextPreference
+        android:key="DBNM_KEY"
+        android:title="База данных"/>
+    <EditTextPreference
+        android:key="USER_KEY"
+        android:title="Логин"/>
+    <EditTextPreference
+        android:key="PASS_KEY"
+        android:title="Пароль"/>
+</PreferenceScreen>
