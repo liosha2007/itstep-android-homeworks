@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Характеристики"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Запустить сервис"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Остановить сервис"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Тест уведомления"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txb_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomPanel"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txb_status"
+        android:layout_below="@id/txv_title"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/chb_keep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выводить данные периодически"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txv_delay_title"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="Периодичность (сек): "/>
+
+                <EditText
+                    android:id="@+id/txv_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@id/txv_delay_title"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:text="10"/>
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/chb_restart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Перезапускать при остановке"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Показывать в уведомлении"/>
+
+            <CheckBox
+                android:id="@+id/chb_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.BOARD"/>
+
+            <CheckBox
+                android:id="@+id/chb_bootloader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.BOOTLOADER"/>
+
+            <CheckBox
+                android:id="@+id/chb_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.BRAND"/>
+
+            <CheckBox
+                android:id="@+id/chb_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.DEVICE"/>
+
+            <CheckBox
+                android:id="@+id/chb_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.DISPLAY"/>
+
+            <CheckBox
+                android:id="@+id/chb_hardware"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.HARDWARE"/>
+
+            <CheckBox
+                android:id="@+id/chb_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.ID"/>
+
+            <CheckBox
+                android:id="@+id/chb_serial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.SERIAL"/>
+
+            <CheckBox
+                android:id="@+id/chb_codename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.VERSION.CODENAME"/>
+
+            <CheckBox
+                android:id="@+id/chb_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.VERSION.RELEASE"/>
+
+            <CheckBox
+                android:id="@+id/chb_sdk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.VERSION.SDK"/>
+
+            <CheckBox
+                android:id="@+id/chb_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build.MODEL"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
