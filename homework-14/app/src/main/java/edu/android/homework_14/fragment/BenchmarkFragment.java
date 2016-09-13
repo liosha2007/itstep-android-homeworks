@@ -123,7 +123,6 @@ public class BenchmarkFragment extends GenericFragment<MainActivity> implements 
     }
 
     @Override
-
     public void onRequestPermissionsResult(int permsRequestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
         switch(permsRequestCode){
             case 200:

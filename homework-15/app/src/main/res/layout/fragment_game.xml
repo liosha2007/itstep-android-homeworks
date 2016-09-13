@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".fragment.GameFragment">
+
+
+    <LinearLayout
+        android:id="@+id/lnl_enemyLives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imv_enemy"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:background="#FF0000"/>
+
+    <TextView
+        android:id="@+id/txv_enemy_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:visibility="gone"
+        android:rotation="180"
+        android:text="Победа!"
+        android:textSize="26sp"/>
+
+    <ImageView
+        android:id="@+id/imv_ball"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="200dp"
+        android:background="#0000FF"/>
+
+
+    <TextView
+        android:id="@+id/txv_player_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:text="Победа!"
+        android:textSize="26sp"/>
+
+    <ImageView
+        android:id="@+id/imv_player"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="#FF0000"/>
+
+    <LinearLayout
+        android:id="@+id/lnl_playerLives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#00ff00"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
